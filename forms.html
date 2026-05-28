@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travo - Booking Form</title>
+</head>
+<body style="font-family:Arial; margin:0; background:url('travo_background.jpg') no-repeat center center fixed; background-size:cover;">
+
+  <div style="background:rgba(0,0,0,0.6); min-height:100vh; padding:30px;">
+    <h1 style="text-align:center; color:#FFD700;">Book Your Rwanda Experience</h1>
+
+    <!-- form -->
+    <form action="#" method="post" style="max-width:850px; margin:auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 3px 8px rgba(0,0,0,0.3);">
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+        <div style="flex:1; margin:0 8px;">
+          <label>Destination</label><br>
+          <select name="destination" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            <option value="">Where are you going?</option>
+            <option>Volcanoes National Park</option>
+            <option>Akagera National Park</option>
+            <option>Nyungwe Forest</option>
+            <option>Lake Kivu</option>
+            <option>Kigali City Tour</option>
+          </select>
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Check-in</label><br>
+          <input type="date" name="checkin" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Check-out</label><br>
+          <input type="date" name="checkout" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+        <div style="flex:1; margin:0 8px;">
+          <label>Rooms</label><br>
+          <input type="number" name="rooms" min="1" value="1" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Adults</label><br>
+          <input type="number" name="adults" min="1" value="2" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Kids</label><br>
+          <input type="number" name="kids" min="0" value="0" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+      </div>
+
+      <!-- room type -->
+      <div style="margin-bottom:15px;">
+        <label>Room Type</label><br>
+        <select name="room_type" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+          <option value="">Select Room Type</option>
+          <option>Kigali Serena Hotel - Luxury Suite</option>
+          <option>Radisson Blu Kigali - Executive Suite</option>
+          <option>Virunga Lodge - Deluxe Cottage</option>
+          <option>One&Only Nyungwe House - Forest Villa</option>
+          <option>Amakoro Songa Lodge - Eco Villa</option>
+          <option>Five to Five Hotel - Standard Double</option>
+          <option>Akagera Game Lodge - Twin Room</option>
+          <option>Kigali Marriott - Family Apartment</option>
+          <option>Lake Kivu Serena Resort - Family Suite</option>
+          <option>Musanze Guesthouse - Budget Room</option>
+          <option>Kigali Hostel - Shared Room</option>
+          <option>Magashi Safari Camp - Luxury Tent</option>
+          <option>Akagera Campsite - Safari Tent</option>
+        </select>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+        <div style="flex:1; margin:0 8px;">
+          <label>Preferred Hotel/Restaurant</label><br>
+          <select name="accommodation" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            <option>Kigali Serena Hotel</option>
+            <option>Radisson Blu Kigali</option>
+            <option>Lake Kivu Serena Resort</option>
+            <option>Inyange Restaurant</option>
+            <option>Local Guesthouse</option>
+          </select>
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Transport Agency</label><br>
+          <select name="transport" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+            <option>RwandAir</option>
+            <option>Akagera Coaches</option>
+            <option>Safari Van Hire Rwanda</option>
+            <option>Europcar Rwanda</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+        <div style="flex:1; margin:0 8px;">
+          <label>Full Name</label><br>
+          <input type="text" name="name" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Email</label><br>
+          <input type="email" name="email" required style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+        <div style="flex:1; margin:0 8px;">
+          <label>Phone</label><br>
+          <input type="tel" name="phone" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;">
+        </div>
+      </div>
+
+      <div style="margin-bottom:15px;">
+        <label>Special Requests</label><br>
+        <textarea name="requests" rows="3" style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;"></textarea>
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <input type="submit" value="Book Now" style="flex:1; margin:0 5px; padding:10px; background:#004080; color:#fff; border:none; border-radius:4px;">
+        <input type="reset" value="Reset" style="flex:1; margin:0 5px; padding:10px; background:#ccc; color:#333; border:none; border-radius:4px;">
+      </div>
+    </form>
+
+    <a href="travo.html" style="color:#FFD700; text-decoration:none; display:block; margin-top:20px;">Back to Home Page</a>
+  </div>
+</body>
+</html>

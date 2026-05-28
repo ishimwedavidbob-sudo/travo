@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travo Admin Dashboard</title>
+  <style>
+    body{
+      font-family: Arial;
+      background: linear-gradient(to right,#e6f2ff,#f9f9f9);
+      margin:0;
+      padding:0;
+    }
+    h1{
+      text-align:center;
+      color:#004080;
+      margin-top:20px;
+    }
+    .container{
+      width:90%;
+      margin:20px auto;
+    }
+    .card{
+      background:#fff;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.1);
+      padding:20px;
+      margin-bottom:20px;
+    }
+    .summary{
+      display:flex;
+      justify-content:space-around;
+      gap:15px;
+    }
+    .box{
+      flex:1;
+      background:#90e0ef;
+      text-align:center;
+      padding:15px;
+      border-radius:8px;
+      font-weight:bold;
+      color:#004080;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+    }
+    th,td{
+      border:1px solid #ddd;
+      padding:10px;
+      text-align:center;
+    }
+    th{
+      background:#0077b6;
+      color:#fff;
+    }
+    tr:nth-child(even){
+      background:#f2f2f2;
+    }
+    ul,ol{
+      margin:10px 0;
+      padding-left:20px;
+    }
+    footer{
+      background:#004080;
+      color:#fff;
+      text-align:center;
+      padding:10px;
+      margin-top:30px;
+    }
+    .notifications li{
+      background:#caf0f8;
+      margin:5px 0;
+      padding:8px;
+      border-radius:5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Travo Smart Tourism Admin Dashboard</h1>
+  <div class="container">
+
+    <!-- summary -->
+    <div class="summary">
+      <div class="box">Total Users<br>3,245</div>
+      <div class="box">Active Bookings<br>412</div>
+      <div class="box">New Reviews<br>89</div>
+      <div class="box">Revenue<br>12,500,000 RWF</div>
+    </div>
+
+    <!-- tours -->
+    <div class="card">
+      <h2>Upcoming Tours</h2>
+      <ul>
+        <li>Akagera Safari Adventure – May 25</li>
+        <li>Lake Kivu Beach Escape – June 2</li>
+        <li>Kings Palace Cultural Tour – June 10</li>
+        <li>Kigali City Experience – June 15</li>
+      </ul>
+    </div>
+
+    <!-- destinations -->
+    <div class="card">
+      <h2>Top Destinations in Rwanda</h2>
+      <table>
+        <tr><th>Destination</th><th>Visits</th></tr>
+        <tr><td>Akagera National Park</td><td>1.8K</td></tr>
+        <tr><td>Lake Kivu</td><td>1.2K</td></tr>
+        <tr><td>Kings Palace, Nyanza</td><td>950</td></tr>
+        <tr><td>Kigali Genocide Memorial</td><td>870</td></tr>
+      </table>
+    </div>
+
+    <!-- popular -->
+    <div class="card">
+      <h2>Popular Tours</h2>
+      <ol>
+        <li>Wildlife Safari – 3 Days / 75 Booked</li>
+        <li>Beach & Boat Ride – 2 Days / 110 Booked</li>
+        <li>Royal Heritage Tour – 1 Day / 60 Booked</li>
+        <li>Kigali City Walk – Half Day / 95 Booked</li>
+      </ol>
+    </div>
+
+    <!-- reviews -->
+    <div class="card">
+      <h2>Recent Reviews</h2>
+      <p><b>Aline M.</b> – Loved the Akagera Safari! ★★★★★</p>
+      <p><b>Eric T.</b> – Lake Kivu was peaceful and clean ★★★★☆</p>
+      <p><b>Grace N.</b> – Great cultural experience at Nyanza ★★★★★</p>
+    </div>
+
+    <!-- revenue -->
+    <div class="card">
+      <h2>Revenue Breakdown</h2>
+      <table>
+        <tr><th>Category</th><th>Percentage</th></tr>
+        <tr><td>Tours</td><td>55%</td></tr>
+        <tr><td>Hotels</td><td>30%</td></tr>
+        <tr><td>Activities</td><td>15%</td></tr>
+      </table>
+    </div>
+
+    <!-- notifications -->
+    <div class="card">
+      <h2>System Notifications</h2>
+      <ul class="notifications">
+        <li>New Booking Request from Kigali</li>
+        <li>Hotel Partner Updated – Lake Kivu Resort</li>
+        <li>Payment Received – Safari Adventure</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Travo Smart Tourism | Admin Dashboard</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Smaller hero for subpages */
+.small-hero {
+  background: url('rwanda-banner.jpg') center/cover no-repeat;
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Destination cards grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.card h3 {
+  color: #002b5c;
+  margin-bottom: 10px;
+}
